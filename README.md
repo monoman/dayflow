@@ -1,5 +1,5 @@
-# Firebase Studio
+# Dayflow: An Firebase Studio experiment
 
-This is a NextJS starter in Firebase Studio.
+From the NextJS starter in Firebase Studio. 
+A Task Management app with some time-tracking
 
-To get started, take a look at src/app/page.tsx.

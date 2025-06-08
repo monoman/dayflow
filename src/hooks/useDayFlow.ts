@@ -6,14 +6,15 @@ import { useToast } from '@/hooks/use-toast';
 import { useState, useEffect, useCallback } from 'react';
 
 const initialProjects: Project[] = [
-  { id: 'proj-1', name: 'Work' },
-  { id: 'proj-2', name: 'Personal' },
+  { id: 'work', name: 'Work' },
+  { id: 'personal', name: 'Personal' },
+  { id: 'study', name: 'Studies'}
 ];
 
 const initialTasks: Task[] = [
-  { id: 'task-1', title: 'Morning Standup Meeting', priority: 'high', actualDuration: 0, status: 'todo', createdAt: new Date(), projectId: 'proj-1', estimatedDuration: 30, deadline: new Date(new Date().setDate(new Date().getDate() + 1)) },
-  { id: 'task-2', title: 'Develop feature "Edit Task"', description: 'Implement the main functionality for feature "Edit Task" according to specs.', priority: 'medium', actualDuration: 0, status: 'todo', createdAt: new Date(), projectId: 'proj-1', estimatedDuration: 120 },
-  { id: 'task-3', title: 'Grocery Shopping', priority: 'low', actualDuration: 0, status: 'todo', createdAt: new Date(), projectId: 'proj-2', estimatedDuration: 45 },
+  { id: 'task-1', title: 'Twice-a-week Standup Meeting', priority: 'high', actualDuration: 0, status: 'todo', createdAt: new Date(), projectId: 'work', estimatedDuration: 60, deadline: new Date(new Date().setDate(new Date().getDate() + 1)) },
+  { id: 'task-2', title: 'Develop feature "Edit Task"', description: 'Implement the main functionality for feature "Edit Task" according to specs.', priority: 'medium', actualDuration: 0, status: 'todo', createdAt: new Date(), projectId: 'study', estimatedDuration: 240 },
+  { id: 'task-3', title: '"Cerealista" Shopping', priority: 'low', actualDuration: 0, status: 'todo', createdAt: new Date(), projectId: 'personal', estimatedDuration: 120 },
 ];
 
 export function useDayFlow() {

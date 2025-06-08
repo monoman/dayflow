@@ -11,6 +11,7 @@ body {
   width: 100% !important;
 }
 
+
 @layer base {
   :root {
     --background: 30 100% 85%; /* Light Orange #FFE0B2 */
@@ -98,4 +99,8 @@ body {
 }
 .bg-newtask h2 {
   border-bottom: solid 3px hsl(var(--accent));
+}
+
+.container {
+  max-width: 100%;
 }

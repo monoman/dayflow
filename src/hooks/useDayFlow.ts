@@ -12,7 +12,7 @@ const initialProjects: Project[] = [
 
 const initialTasks: Task[] = [
   { id: 'task-1', title: 'Morning Standup Meeting', priority: 'high', actualDuration: 0, status: 'todo', createdAt: new Date(), projectId: 'proj-1', estimatedDuration: 30, deadline: new Date(new Date().setDate(new Date().getDate() + 1)) },
-  { id: 'task-2', title: 'Develop feature X', description: 'Implement the main functionality for feature X according to specs.', priority: 'medium', actualDuration: 0, status: 'todo', createdAt: new Date(), projectId: 'proj-1', estimatedDuration: 120 },
+  { id: 'task-2', title: 'Develop feature "Edit Task"', description: 'Implement the main functionality for feature "Edit Task" according to specs.', priority: 'medium', actualDuration: 0, status: 'todo', createdAt: new Date(), projectId: 'proj-1', estimatedDuration: 120 },
   { id: 'task-3', title: 'Grocery Shopping', priority: 'low', actualDuration: 0, status: 'todo', createdAt: new Date(), projectId: 'proj-2', estimatedDuration: 45 },
 ];
 

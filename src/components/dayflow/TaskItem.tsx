@@ -15,6 +15,7 @@ import { Input } from '../ui/input';
 import { Textarea } from '../ui/textarea';
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '../ui/select';
 import React, { useState, useEffect } from 'react';
+import { Label } from '../ui/label';
 
 interface TaskItemProps {
   task: Task;
@@ -194,18 +195,6 @@ export default function TaskItem({
             <Clock className="h-4 w-4 text-primary" /> Tracked: {timerDisplay}
           </div>
         </div>
-         {task.status !== 'completed' && !task.description && (
-            <Button variant="link" size="sm" onClick={handleAIEstimateClick} disabled={isLoadingEstimate === task.id} className="p-0 h-auto text-xs">
-                {isLoadingEstimate === task.id ? <Loader2 className="mr-1 h-3 w-3 animate-spin" /> : <Wand2 className="mr-1 h-3 w-3" />}
-                Add description & estimate
-            </Button>
-        )}
-        {task.status !== 'completed' && task.description && !task.estimatedDuration && (
-             <Button variant="link" size="sm" onClick={handleAIEstimateClick} disabled={isLoadingEstimate === task.id} className="p-0 h-auto text-xs">
-              {isLoadingEstimate === task.id ? <Loader2 className="mr-1 h-3 w-3 animate-spin" /> : <Wand2 className="mr-1 h-3 w-3" />}
-              AI Estimate Time
-            </Button>
-        )}
       </CardContent>
       <CardFooter className="flex flex-col sm:flex-row justify-between items-center gap-2">
         <p className="text-xs text-muted-foreground">

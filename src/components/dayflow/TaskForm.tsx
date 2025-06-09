@@ -99,7 +99,7 @@ export default function TaskForm({ addTask, projects, addProject, getAiEstimate,
               </Button>
             </PopoverTrigger>
             <PopoverContent className="w-auto p-0">
-              <Calendar mode="single" selected={deadline} onSelect={setDeadline} initialFocus />
+              <Calendar mode="single" selected={deadline} onSelect={setDeadline} autoFocus />
             </PopoverContent>
           </Popover>
         </div>
